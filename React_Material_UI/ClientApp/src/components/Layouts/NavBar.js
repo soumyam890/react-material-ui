@@ -47,7 +47,7 @@ function NavBar(props) {
 
                 <ListItemText inset>
                     <TypoGraphy color="inherit" variant="title">
-                        Contact <AccountBox />
+                        <Link to="/contact" style={{ color: 'white', textDecoration: 'none' }}> Contact Form </Link> <AccountBox />
                     </TypoGraphy>
                 </ListItemText>
             </ListItem >
