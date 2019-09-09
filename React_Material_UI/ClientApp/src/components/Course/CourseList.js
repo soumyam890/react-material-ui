@@ -33,7 +33,6 @@ class CoursesList extends Component {
             })
     }
     onSearchInputChange = (event) => {
-        console.log("Search changed ..." + event.target.value)
         if (event.target.value) {
             this.setState({ searchString: event.target.value })
         } else {
