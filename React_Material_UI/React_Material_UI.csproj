@@ -12,6 +12,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,9 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\components\Course.js" />
-    <TypeScriptCompile Include="ClientApp\src\components\CourseList.js" />
-    <TypeScriptCompile Include="ClientApp\src\components\NavBar.js" />
+    <TypeScriptCompile Include="ClientApp\src\components\Course\Course.js" />
+    <TypeScriptCompile Include="ClientApp\src\components\Course\CourseList.js" />
+    <TypeScriptCompile Include="ClientApp\src\components\Layouts\NavBar.js" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
