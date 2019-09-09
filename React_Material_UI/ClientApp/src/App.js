@@ -9,6 +9,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'
 import TypoGraphy from '@material-ui/core/Typography'
 import CoursesList from './components/Course/CourseList';
+import Contact from './components/Contacts/Contact'; 
 
 
 export default class App extends React.Component {
@@ -30,6 +31,7 @@ export default class App extends React.Component {
                 <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
                 <Route path='/course' component={CoursesList} />
                 <Route path='/posts' component={Posts} />
+                <Route path='/contact' component={Contact} />
             </div>
         )
     }
